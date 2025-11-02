@@ -7,18 +7,18 @@ export default function EducationListItem({
 }) {
   const yearMonthFormatter = Intl.DateTimeFormat("en-DE", {
     month: "short",
-    year: "numeric",
+    year: "2-digit",
   });
 
   const dateString =
     yearMonthFormatter.format(education.start) +
-    " - " +
-    (education.end ? yearMonthFormatter.format(education.end) : "now");
+    "' - " +
+    (education.end ? yearMonthFormatter.format(education.end) + "'" : "now");
 
   return (
-    <ul className="relative table w-full table-fixed pb-6">
+    <li className="relative table w-full table-fixed pb-6">
       <div className="table-cell w-1/3 pr-6 text-right">
-        <p className="font-semibold">{dateString}</p>
+        <p className="font-mono text-sm font-semibold">{dateString}</p>
         <p className="text-muted-foreground text-sm">{education.location}</p>
       </div>
       <div className="bg-secondary absolute top-0 bottom-0 left-1/3 w-px">
@@ -40,6 +40,6 @@ export default function EducationListItem({
           </p>
         )}
       </div>
-    </ul>
+    </li>
   );
 }

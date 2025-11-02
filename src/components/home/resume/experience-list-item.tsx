@@ -28,7 +28,7 @@ export default function ExperienceListItem({
       (exp.role.end ? yearMonthFormatter.format(exp.role.end) : "now");
 
     return (
-      <ul className="rounded-lg border px-4 pt-2 pb-4">
+      <li className="rounded-lg border px-4 pt-2 pb-4">
         <p className="text-muted-foreground font-mono text-xs">{dateString}</p>
 
         <div className="mt-2 flex items-start gap-4">
@@ -47,7 +47,7 @@ export default function ExperienceListItem({
             <p className="mt-2 text-sm">{exp.role.summary}</p>
           </div>
         </div>
-      </ul>
+      </li>
     );
   } else {
     const exp = experience as {
@@ -58,7 +58,7 @@ export default function ExperienceListItem({
     };
 
     return (
-      <ul className="relative rounded-lg border px-4 pt-2 pb-4">
+      <li className="relative rounded-lg border px-4 pt-2 pb-4">
         <div className="bg-secondary absolute top-16 left-9 h-[calc(100%-88px)] w-px" />
 
         <div className="mt-2 flex items-start gap-4">
@@ -80,7 +80,7 @@ export default function ExperienceListItem({
                 (role.end ? yearMonthFormatter.format(role.end) : "now");
 
               return (
-                <div className="mb-4">
+                <div className="mb-4" key={role.name + role.start.getTime()}>
                   <p className="text-muted-foreground font-mono text-xs">
                     {dateString}
                   </p>
@@ -91,7 +91,7 @@ export default function ExperienceListItem({
             })}
           </div>
         </div>
-      </ul>
+      </li>
     );
   }
 }

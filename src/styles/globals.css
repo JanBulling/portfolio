@@ -125,3 +125,43 @@
 header.scrolled {
   @apply bg-card/50 border-b shadow saturate-200 backdrop-blur-sm;
 }
+
+/* METEOR SHOWER */
+@keyframes meteor {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+#meteors .shower {
+  @apply absolute inset-0 top-0 left-1/2 aspect-square w-screen -translate-x-1/2;
+}
+
+#meteors .meteor {
+  animation: meteor 3s ease-in-out forwards;
+  @apply from-primary absolute top-1/2 left-1/2 h-[75vh] w-0.5 bg-linear-to-b to-transparent;
+}
+
+#meteors .shower.ur {
+  @apply rotate-45;
+}
+
+#meteors .shower.dr {
+  @apply rotate-135;
+}
+
+#meteors .shower.dl {
+  @apply rotate-225;
+}
+
+#meteors .shower.ul {
+  @apply rotate-315;
+}

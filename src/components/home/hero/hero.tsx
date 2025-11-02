@@ -23,27 +23,29 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <Image
-        className="border-primary mb-6 size-40 rounded-full border-4 object-cover shadow-lg md:size-56"
-        width={224}
-        height={224}
-        src="/img/jan-bulling.png"
-        alt="Jan Bulling - profile picture"
-      />
-      <h1 className="text-primary text-4xl font-extrabold lg:text-6xl">
-        Jan Bulling
-      </h1>
-      <p className="text-primary mt-3 text-xl font-semibold lg:text-3xl">
-        Physicist & Developer
-      </p>
-      <p className="text-muted-foreground mt-6 max-w-2xl text-lg">
-        Welcome! I'm a passionate problem-solver, equally at home architecting
-        scalable web applications as I am exploring the fundamental laws of the
-        universe.
-      </p>
+      <div className="flex flex-col items-center justify-center md:flex-1">
+        <Image
+          className="border-primary mb-6 size-40 rounded-full border-4 object-cover shadow-lg md:mt-16 md:size-56 xl:mt-24"
+          width={224}
+          height={224}
+          src="/img/jan-bulling.png"
+          alt="Jan Bulling - profile picture"
+        />
+        <h1 className="text-primary text-4xl font-extrabold lg:text-6xl">
+          Jan Bulling
+        </h1>
+        <p className="text-primary mt-3 text-xl font-semibold lg:text-3xl">
+          Physicist & Developer
+        </p>
+        <p className="text-muted-foreground mt-6 hidden max-w-2xl md:block md:text-lg">
+          Welcome! I'm a passionate problem-solver, equally at home architecting
+          scalable web applications as I am exploring the fundamental laws of
+          the universe.
+        </p>
+      </div>
 
-      <div className="mt-12 flex items-center gap-4">
-        <a href="#showcase">
+      <div className="mt-4 flex items-center gap-4 md:mt-12">
+        <a href="#showcase-physics">
           <Button>View my projects</Button>
         </a>
         <a href="#resume">
@@ -51,12 +53,14 @@ export default function HeroSection() {
         </a>
       </div>
 
-      <a
-        href="#showcase"
-        className="mt-12 animate-bounce p-4 transition-transform duration-200 hover:translate-y-1 hover:animate-none"
-      >
-        <ChevronDown />
-      </a>
+      <div className="mt-12 flex flex-col items-center justify-end md:mt-16 xl:mt-24">
+        <a
+          href="#showcase-physics"
+          className="animate-bounce p-4 transition-transform duration-200 hover:translate-y-1 hover:animate-none"
+        >
+          <ChevronDown />
+        </a>
+      </div>
     </section>
   );
 }
