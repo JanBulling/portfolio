@@ -16,7 +16,7 @@ export function ColorSelector({ className }: React.ComponentProps<"div">) {
   const { activeTheme, setActiveTheme } = useThemeConfig();
 
   return (
-    <div className={cn("flex items-center gap-2", className)}>
+    <div className={cn("theme-container flex items-center gap-2", className)}>
       <Label htmlFor="theme-selector" className="sr-only">
         Theme
       </Label>
