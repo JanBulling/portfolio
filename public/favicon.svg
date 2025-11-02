@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 283.46 283.46" style="enable-background:new 0 0 283.46 283.46;" xml:space="preserve">
+  <style>
+    path {
+      fill: #333;
+    }
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: #ccc;
+      }
+    }
+  </style>
+  <path d="M7.21,118.59l82.2-34.46l7.27,23.12l-59.94,23.33l59.94,23.33l-7.27,23.12l-82.2-34.68V118.59z"/>
+  <path d="M129.37,230.27l-27.35,1.64l48.77-188.2l26.9-1.61L129.37,230.27z"/>
+  <path d="M276.15,142.57l-82.2,34.68l-7.49-23.12l60.15-23.33l-60.15-23.33l7.49-23.12l82.2,34.46V142.57z"/>
+</svg>
