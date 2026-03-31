@@ -9,7 +9,7 @@ export default function HeroSection() {
       className="theme-container relative flex h-[calc(100vh-4rem)] min-h-[700px] flex-col items-center justify-center p-6 text-center"
     >
       <div className="absolute inset-0 top-1/4 -z-10 overflow-hidden">
-        <div className="from-primary absolute top-0 left-1/2 aspect-square min-h-screen w-[250vw] -translate-x-1/2 rounded-full bg-linear-to-b from-0% to-transparent to-5% p-px">
+        <div className="from-primary absolute top-0 left-1/2 aspect-square min-h-screen w-[250vw] -translate-x-1/2 overflow-hidden rounded-full bg-linear-to-b from-0% to-transparent to-5% p-px">
           <div className="bg-background flex h-full w-full justify-center overflow-hidden rounded-full p-px">
             <div className="bg-primary h-20 w-full rounded-full blur-3xl"></div>
           </div>
